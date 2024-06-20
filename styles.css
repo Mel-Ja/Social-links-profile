@@ -1,0 +1,94 @@
+:root {
+    --deep-black: #141414;
+    --mid-black: #1f1f1f;
+    --soft-black: #333333;
+    --cream: #f6f6f6;
+    --green: #c4f82a;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    src: url('./assets/fonts/static/Inter-Bold.ttf');;
+    src: url('./assets/fonts/static/Inter-SemiBold.ttf');
+    src: url('./assets/fonts/static/Inter-Regular.ttf');
+}
+
+html { 
+    font-family: 'Inter';
+}
+
+*, * > * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card__links {
+    display: block;
+}
+.card__links:hover, .card_link:hover {
+    cursor: pointer;
+}
+
+.card__link {
+    background-color: var(--soft-black);
+    padding: 1.2rem;
+    display: block;
+    margin-block: 1rem;
+
+    transition: all 150ms ease;
+}
+.card__link:hover {
+    background-color: var(--green);
+    color: var(--deep-black);
+}
+
+.main {
+    background-color: var(--deep-black);
+    padding-block: 2rem;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    color: var(--cream);
+    background-color: var(--mid-black);
+    width: 90%;
+    max-width: 450px;
+    
+    padding: 2rem 2.2rem;
+    
+    text-align: center;
+}
+
+.card, .card__link {
+    border-radius: .8rem;
+}
+
+.card__img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.card__heading {
+    letter-spacing: 2px;
+}
+.card__subtitle {
+    color: var(--green);
+    margin-block-start: .5rem;
+}
+
+.card__heading, .card__description {
+    margin-block: 2rem 1.5rem;
+}
